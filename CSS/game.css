@@ -1,0 +1,90 @@
+.header{grid-area: header;}
+
+navbar{
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    background-color: #36AE7C;
+    margin: 5px;
+    padding: 10px 5px;
+}
+
+.top {
+    display: grid;
+    background-color: #EB5353;
+    margin: 5px;
+    padding: 10px 5px;
+    text-align: center;
+    color: #187498;
+}
+
+a{
+    font-size: 1.5em;
+    line-height: 30px;
+    margin: 0px 10px;
+    color: #F9D923;
+}
+a:nth-child(3){
+    grid-column: 6;
+}
+
+footer{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 50px;
+    margin: 5px 5px;
+    padding: 10px;
+    background-color: #EB5353;
+    text-align: center;
+    color: #187498;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.game{
+    width: 500px;
+    height: 200px;
+    border: 5px solid #F9D923;
+    margin: auto;
+
+}
+#character{
+    width: 25px;
+    height: 50px;
+    background-color: #EB5353;
+    position:relative;
+    top: 150px;
+}
+
+.animate{
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#block{
+    background-color: #187498;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+    
+}
+@keyframes block{
+    0%{left: 500px}
+    100%{left: -20px}
+}
+p{
+    text-align: center;
+    font-size: medium
+}
